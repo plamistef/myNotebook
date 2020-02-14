@@ -12,18 +12,26 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
     
     var currentHeadline:HeadlineItem!
     var headlineItems:[HeadlineItem]!
-   // var addHeadline: Bool = false
     
     func backButtonPressed(Title: String, Content: String) {
-      
-        currentHeadline.title = Title
+        
+        
+        if Title == "" {
+                currentHeadline.title = "Untitled"
+            print(currentHeadline.title)
+        }else{
+            currentHeadline.title = Title}
+        
+        //currentHeadline.title = Title
         currentHeadline.content = Content
         currentHeadline.saveItem()
        
-        loadData()
-        print("stana li")
+        //add the headline to the array
+        headlineItems.append(currentHeadline)
+        
+        tableView.reloadData()
+        
     }
-    
     
     func loadData() {
         headlineItems = [HeadlineItem]()
@@ -130,6 +138,7 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
         }
     }
     
+    
     // MARK: - Navigation
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -152,7 +161,7 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
         
         if segue.identifier == "addHeadline" {
         
-            currentHeadline = HeadlineItem.createItem(Title: "Untitled",Content: "Enter content here")
+            currentHeadline = HeadlineItem.createItem(Title: "",Content: "Enter content here")
                        
             viewController.text = currentHeadline.content
             viewController.mainTitle = currentHeadline.title

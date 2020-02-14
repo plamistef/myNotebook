@@ -15,8 +15,11 @@ protocol ViewControllerDelegate{
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var headlineTitle: UITextView!
+   // @IBOutlet weak var headlineTitle: UITextView!
+    
+    @IBOutlet weak var headlineTitle: UITextField!
     @IBOutlet weak var textView: UITextView!
+    var empty:String = ""
     
    // @IBOutlet weak var headlineTitle: UILabel!
     var text:String = ""
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         textView.text = text
         headlineTitle.text = mainTitle
+    
     }
     /*
     @IBAction func unwindToTableView(_ unwindSegue: UIStoryboardSegue) {
@@ -54,14 +58,10 @@ class ViewController: UIViewController {
            if(!(parent?.isEqual(self.parent) ?? false)) {
                print("Back Button Pressed!")
             if let delegateObject = self.delegate {
-            print("we are in")
-                //currentHeadline!.content = textView.text
-              //  currentHeadline?.saveItem()
-                delegateObject.backButtonPressed(Title: headlineTitle.text,Content: textView.text)
-            //let test = HeadlineItem(title: "nil",content:textView.text,modifiedAt: Date(),itemIdentifier: UUID())
-            //test.saveItem()
+                
+                delegateObject.backButtonPressed(Title: headlineTitle.text ?? "",Content: textView.text)
             
-           }
+           
        
        }
 }
@@ -74,4 +74,4 @@ class ViewController: UIViewController {
 }
 
 
-
+}
