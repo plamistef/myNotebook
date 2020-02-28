@@ -27,10 +27,10 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
         currentHeadline.saveItem()
        
         //add the headline to the array
-        headlineItems.append(currentHeadline)
+        //headlineItems.append(currentHeadline)
         
-        tableView.reloadData()
-        
+        //tableView.reloadData()
+        loadData()
     }
     
     func loadData() {
