@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class TableViewController: UITableViewController, TableViewDelegate, ViewControllerDelegate {
     
@@ -56,6 +57,8 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
         super.viewDidLoad()
         loadData()
         self.tableView.reloadData()
+        let db = Firestore.firestore()
+       // db.collection("HeadlineItems").addDocument(data: ["title":"test"])
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

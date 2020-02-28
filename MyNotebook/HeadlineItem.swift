@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct HeadlineItem : Codable{
     var title:String
@@ -15,7 +16,12 @@ struct HeadlineItem : Codable{
     var itemIdentifier: UUID
 
     func saveItem() {
+        let db = Firestore.firestore()
+        db.collection("HeadlineItems").addDocument(data: ["title":title,"content":content])
+        
+        //save file locally
         DataManager.save(self, with: itemIdentifier.uuidString)
+        
     }
     
     func deleteItem() {
