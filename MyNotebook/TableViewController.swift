@@ -40,7 +40,7 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
             $0.modifiedAt < $1.modifiedAt
         })
         tableView.reloadData()
-        
+        headlineItems[0].getItems()
     }
     
     @IBAction func addBtnClicked  (_ sender: Any){
@@ -57,7 +57,6 @@ class TableViewController: UITableViewController, TableViewDelegate, ViewControl
         super.viewDidLoad()
         loadData()
         self.tableView.reloadData()
-        let db = Firestore.firestore()
        // db.collection("HeadlineItems").addDocument(data: ["title":"test"])
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

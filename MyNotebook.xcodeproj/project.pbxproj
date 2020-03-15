@@ -10,6 +10,7 @@
 		0112BA2F23F31E36008E7639 /* HeadlineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BA2E23F31E36008E7639 /* HeadlineItem.swift */; };
 		0112BA3123F31F39008E7639 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BA3023F31F39008E7639 /* DataManager.swift */; };
 		0112BA3323F32BCE008E7639 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BA3223F32BCE008E7639 /* TableViewCell.swift */; };
+		01284B89241EA3E7008D3B48 /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01284B88241EA3E7008D3B48 /* CloudStorage.swift */; };
 		0197864423F049BA0066348F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197864323F049BA0066348F /* AppDelegate.swift */; };
 		0197864623F049BA0066348F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197864523F049BA0066348F /* SceneDelegate.swift */; };
 		0197864823F049BA0066348F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197864723F049BA0066348F /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		0112BA2E23F31E36008E7639 /* HeadlineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineItem.swift; sourceTree = "<group>"; };
 		0112BA3023F31F39008E7639 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0112BA3223F32BCE008E7639 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		01284B88241EA3E7008D3B48 /* CloudStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorage.swift; sourceTree = "<group>"; };
 		0197864023F049BA0066348F /* MyNotebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0197864323F049BA0066348F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0197864523F049BA0066348F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				0197864923F049BB0066348F /* Main.storyboard */,
 				0197864C23F049BB0066348F /* Assets.xcassets */,
 				0197864E23F049BB0066348F /* LaunchScreen.storyboard */,
+				01284B88241EA3E7008D3B48 /* CloudStorage.swift */,
 			);
 			path = MyNotebook;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0197864823F049BA0066348F /* ViewController.swift in Sources */,
+				01284B89241EA3E7008D3B48 /* CloudStorage.swift in Sources */,
 				0112BA3123F31F39008E7639 /* DataManager.swift in Sources */,
 				0112BA2F23F31E36008E7639 /* HeadlineItem.swift in Sources */,
 				0197864423F049BA0066348F /* AppDelegate.swift in Sources */,

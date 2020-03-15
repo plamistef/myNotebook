@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var headlineTitle: UITextField!
     @IBOutlet weak var textView: UITextView!
+    
+    @IBOutlet weak var imageView: UIImageView!
     var empty:String = ""
     
    // @IBOutlet weak var headlineTitle: UILabel!

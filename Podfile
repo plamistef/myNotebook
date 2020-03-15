@@ -8,5 +8,6 @@ target 'MyNotebook' do
   # Pods for MyNotebook
   pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Storage'
 
 end

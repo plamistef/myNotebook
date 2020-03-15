@@ -90,6 +90,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5T-ZE-YSt">
+                                <rect key="frame" x="73" y="534" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -97,6 +101,7 @@
                     <navigationItem key="navigationItem" id="vLa-Rt-lms"/>
                     <connections>
                         <outlet property="headlineTitle" destination="hLg-ut-bVD" id="WMT-P1-EOm"/>
+                        <outlet property="imageView" destination="M5T-ZE-YSt" id="sSu-W5-F0R"/>
                         <outlet property="textView" destination="VP5-Ll-sKA" id="6AE-va-tYm"/>
                     </connections>
                 </viewController>
